@@ -1,7 +1,9 @@
 import DroneState from '../components/DroneState';
 import Commands from '../components/Commands';
-
+import JmuxerPlayer from '../components/JmuxerPlayer';
 import styled, { createGlobalStyle } from 'styled-components';
+//import $ from jquery;
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -21,7 +23,20 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     font-style: italic;
   }
+  h3 {
+    text-align: center;
+    font-style: italic;
+  }  
 `;
+/*
+Just an experiment to mix in jQuery to see how pre-DOM and post-DOM manipulations play together.
+componentDidMount() {
+  $("button").click(function() {
+    $(function(){
+      $("#includedContent").load("b.html"); 
+    });
+  });
+} */
 
 const PageStyles = styled.div`
   max-width: 500px;
@@ -30,11 +45,12 @@ const PageStyles = styled.div`
 
 const IndexPage = () => (
   <PageStyles>
-    <h2>JavaScript Drone</h2>
+    <h2>U-FLY MY DRONE Node + React</h2>
     <GlobalStyle />
     <Commands />
-    <DroneState />
+    <JmuxerPlayer />
+	  <DroneState />
   </PageStyles>
 );
-
+//    
 export default IndexPage;

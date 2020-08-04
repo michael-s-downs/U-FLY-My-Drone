@@ -1,11 +1,10 @@
 {
-  "homepage": "http://localhost/jscript-drone/",
-  "name": "jscript-drone",
+  "name": "reactapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 3001",
+    "dev": "next -p 7777",
     "build": "next build",
     "start": "next start"
   },
@@ -13,15 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.2",
-    "hls.js": "^0.14.7",
-    "jmuxer": "^1.2.0",
-    "jquery": "^3.5.1",
     "next": "latest",
     "react": "16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.0",
     "socket.io-client": "^2.1.1",
-    "styled-components": "^4.1.1",
-    "video.js": "^7.8.4"
+    "styled-components": "^4.1.1"
   },
   "babel": {
     "presets": [

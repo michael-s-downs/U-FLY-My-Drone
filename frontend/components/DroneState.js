@@ -20,15 +20,21 @@ function useSocket() {
     return () => socket.removeListener('status');
   }, []);
   return status;
-}
+	
+} 
 
 const DroneStateStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 5px;
-  .status {
+  .nodeServerStatusHeader {
     grid-column: 1 / -1;
+    background: #000000;  //black
+    margin: 0;
+    font-size: 1rem;
     text-align: center;
+    padding: 0.5rem;
+    color: white;
   }
 `;
 
@@ -37,7 +43,7 @@ const DroneState = () => {
   const droneState = useDroneState([]);
   return (
     <DroneStateStyles>
-      <p className="status">Status: {status}</p>
+      <h2 className="nodeServerStatusHeader">Drone State: {status}</h2>
       <Battery battery={droneState.bat} />
       <Tilt
         pitch={droneState.pitch}
@@ -45,7 +51,7 @@ const DroneState = () => {
         yaw={droneState.yaw}
         height={droneState.h}
       />
-    </DroneStateStyles>
+    </DroneStateStyles>	
   );
 };
 
