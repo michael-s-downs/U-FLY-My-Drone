@@ -1,25 +1,20 @@
-# JavaScript Drones! 
+# U-FLY My Drone (From the Internet)!
+A Node + React learning experiment...
 
-Watch the videos:
+⚠️️️ This leader line indicates very active state of development until removed!  If you stick a fork in it now, It's guaranteed to be half-baked until this line gets removed.⚠️️️
+⚠️️️ Use the codebase at your own risk in any case. The drone can hurt you, especially if you give someone else remote control over the internet. Don't be unsafe. ⚠️️️
 
-Part 1 → <https://www.youtube.com/watch?v=JzFvGf7Ywkk>
+CREDITS:
+This project is built upon or takes inspiration from at least three others on GitHub:  The main setup of node server and react front-end is a fork of https://github.com/wesbos/javascript-drones to which I've added the essential feature (for remote flight) of capturing and controlling the drone video stream, and some aesthetic mods.  To capture and translate the drone video-stream direct from socket in flight I am using https://github.com/samirkumardas/jmuxer although this does require some mods to get it to work in React.  To allow Internet control via a secure tunnel to the local server I am taking inspiration from project https://github.com/markwinap/DJI-Tello-WS-Server which incorporates a very cool game-controller interface if you have that option available. 
 
-Part 2 → <https://www.youtube.com/watch?v=ozMwRq-IT2w>
+True documentation will be added here after a 1.0.0 draft is declared by the removal of the forking risk notice.
 
 ![](https://d3vv6lp55qjaqc.cloudfront.net/items/3u02271f0u461s2e2q24/Image%202018-12-05%20at%2011.11.56%20AM.png)
 
-⚠️️️ ⚠️ ️️⚠️️️ Use the codebase as your own risk. The drone can hurt you and I'm not responsible for that. Always test commands with the props removed first. Don't be dumb. ⚠️️️ ⚠️️️ ⚠️️️
-
 # Flying a Drone with React and Node.js
 
-IBM is giving away 2,000 DJI Tello drones as part of a contest and I made this video to help them promote it.
-
-* Enter the contest at [https://developer.ibm.com/contest](https://developer.ibm.com/contest/?cm_mmc=ibmdev-_-drone-_-youtube-_-wesbos) (US/ Canada Only)
-* More details about the challenge at [https://developer.ibm.com/blogs/2018/11/12/win-a-drone-program-a-drone-change-the-world/](https://developer.ibm.com/blogs/2018/11/12/win-a-drone-program-a-drone-change-the-world/)
-
-
 ## Software Used
-* React (with React Hooks!)
+* React (with React Hooks, an old-school Class, and dynamic dependency loading for DOM-requiring libraries (jmuxer))
 * Styled Components for styling
 * Node.js and UDP4 sockets for communicating with drone
 * Socket.io WebSockets for sending data to/from the browser
@@ -46,6 +41,23 @@ IBM is giving away 2,000 DJI Tello drones as part of a contest and I made this v
 1. connect to drone via wifi
 1. `npm start`
 
+## ONLY for accessing drone over internet (tunnel)
+
+### Install ngrok
+
+https://ngrok.com/
+
+### Unzip
+
+unzip ngrok.zip
+
+### Setup your account
+
+./ngrok authtoken 6X8R
+
+### Open tunnel
+
+./ngrok http 3000 (assuming Next.js default production port)
 
 ## Troubleshooting
 
@@ -62,7 +74,7 @@ I want you to build cool stuff with this.
 
 Please hack on it and make your own cool things.
 
-## Examples & Resources
+## Further Examples & Resources
 
 * [jsolderitsch/tello-nodejs](https://github.com/jsolderitsch/tello-nodejs) - very simple JavaScript examples
 * [FFMpeg + Node.js Video in the browser complicated example](https://github.com/SovGVD/nodetello/)
