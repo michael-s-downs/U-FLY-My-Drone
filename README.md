@@ -3,11 +3,11 @@ A Node + React Learning Experiment...
 
 CREDITS:
 This project is built upon or takes inspiration from at least three other public repos on GitHub:  
--- https://github.com/wesbos/javascript-drones
--- https://github.com/samirkumardas/jmuxer
--- https://github.com/markwinap/DJI-Tello-WS-Server
+* https://github.com/wesbos/javascript-drones
+* https://github.com/samirkumardas/jmuxer
+* https://github.com/markwinap/DJI-Tello-WS-Server
 
-The main setup of node server and react front-end is a fork of  to which I've added an essential feature for remote-controlling flight of drone video capture and controls, a few extra new controls and personal aesthetic mods.  For capturing and translating the drone video-stream direct from socket in flight, I am using although this requires dynamic dependency loading to get it to work in React, as the library expects to be loaded after DOM is created which is apparently anti-pattern for Next.js.  To allow Internet control via a secure tunnel to the local server I am taking inspiration from project  which incorporates a very cool game-controller interface if you have that option available. 
+The main setup of node server and react front-end is a fork of javascript-drones to which I've added drone video capture and controls (essential for remote-control flight to see where you're going), new and updated controls and some aesthetic mods.  For capture and display of drone h264 video-stream direct from socket, I am using jmuxer, but this requires dynamic dependency loading in React (or Next) as the library expects a pre-existing DOM which is anti-pattern for Next.js.  To allow Internet control via a secure tunnel to the local server (& local wi-fi connection to drone), I am taking inspiration from DJI-Tell-WS-Server project to use ngrok.  This project also incorporates a very cool game-controller interface which is not used here, if you have such a harware device and want to make that option available. 
 
 ![](https:/https://github.com/michael-s-downs/javascript-drones/edit/master/frontend/static/Screenshot-Sized.png)
 
