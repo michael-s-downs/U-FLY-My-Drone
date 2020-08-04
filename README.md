@@ -11,8 +11,9 @@ This project is built upon or takes inspiration from at least three other public
 * https://github.com/samirkumardas/jmuxer
 * https://github.com/markwinap/DJI-Tello-WS-Server
 
-The main setup of node server and react front-end is a fork of javascript-drones to which I've added drone video capture and controls (essential for remote-control flight to see where you're going), new and updated controls and some aesthetic mods.  For capture and display of drone h264 video-stream direct from socket, I am using jmuxer, but this requires dynamic dependency loading in React (or Next) as the library expects a pre-existing DOM which is anti-pattern for Next.js.  To allow Internet control via a secure tunnel to the local server (& local wi-fi connection to drone), I am taking inspiration from DJI-Tello-WS-Server project to use ngrok.  Mark's project also incorporates a very cool game-controller interfacing option which is not used on my desktop app, if you have such a harware device and want to make that option available check that out! 
 ![](https://raw.githubusercontent.com/michael-s-downs/U-FLY-My-Drone/master/frontend/static/Screenshot-Sized.png)
+
+The main setup of node server and react front-end is a fork of javascript-drones to which I've added drone video capture and controls (essential for remote-control flight to see where you're going), new and updated controls and some aesthetic mods.  For capture and display of drone h264 video-stream direct from socket, I am using jmuxer, but this requires dynamic dependency loading in React (or Next) as the library expects a pre-existing DOM which is anti-pattern for Next.js.  To allow Internet control via a secure tunnel to the local server (& local wi-fi connection to drone), I am taking inspiration from DJI-Tello-WS-Server project to use ngrok.  Mark's project also incorporates a very cool game-controller interfacing option which is not used on my desktop app, if you have such a harware device and want to make that option available check that out! 
 
 # Flying a Drone with React and Node.js
 
