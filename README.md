@@ -2,7 +2,8 @@
 A Node + React Learning Experiment...
 
 ⚠️️️ Always:  Use the codebase at your own risk. The drone can hurt you especially if you let someone else remote control it from the internet! Use common sense. ⚠️
-⚠️️️ Today :  Until this statement is removed, don't stick a Fork in it, its half-baked.  This is a working repository and only when this statement is removed and replaced with a version higher than 1.0.0. is it reasonable to expect it to work enough to fork. ⚠️️️ 
+
+⚠️️️ Today:  Until this statement is removed, don't stick a Fork in it, its half-baked.  This is a working repository and only when this statement is removed and replaced with a version higher than 1.0.0. is it reasonable to expect it to work enough to fork. ⚠️️️ 
 
 CREDITS:
 This project is built upon or takes inspiration from at least three other public repos on GitHub:  
