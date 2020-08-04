@@ -7,9 +7,7 @@ A Node + React learning experiment...
 CREDITS:
 This project is built upon or takes inspiration from at least three others on GitHub:  The main setup of node server and react front-end is a fork of https://github.com/wesbos/javascript-drones to which I've added the essential feature (for remote flight) of capturing and controlling the drone video stream, and some aesthetic mods.  To capture and translate the drone video-stream direct from socket in flight I am using https://github.com/samirkumardas/jmuxer although this does require some mods to get it to work in React.  To allow Internet control via a secure tunnel to the local server I am taking inspiration from project https://github.com/markwinap/DJI-Tello-WS-Server which incorporates a very cool game-controller interface if you have that option available. 
 
-True documentation will be added here after a 1.0.0 draft is declared by the removal of the forking risk notice.
-
-![](https://d3vv6lp55qjaqc.cloudfront.net/items/3u02271f0u461s2e2q24/Image%202018-12-05%20at%2011.11.56%20AM.png)
+![](https:/https://github.com/michael-s-downs/javascript-drones/edit/master/frontend/static/screenshot.jpg)
 
 # Flying a Drone with React and Node.js
 
